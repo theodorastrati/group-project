@@ -1,0 +1,35 @@
+img#img1 {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 40vw; /* Set a small width */
+  height: 50vh;
+}
+ img#img2 {
+   border: 1px solid #ddd; /* Gray border */
+   border-radius: 4px;  /* Rounded border */
+   padding: 5px; /* Some padding */
+   width: 40vw; /* Set a small width */
+   height: 50vh;
+ }
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px #026670;
+}
+
+p{
+  font-size: 1em;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.col-sm#col2 {
+  display:flex;
+  flex-direction:column;
+justify-content: flex-start;
+
+}
