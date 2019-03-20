@@ -181,7 +181,7 @@ div.carousel-caption#cc1 {
   left: -20%;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
   .carousel-inner {
   height: 320px;
   width: 80vw;
