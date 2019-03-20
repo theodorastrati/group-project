@@ -12,6 +12,23 @@ img#img1 {
    width: 40vw; /* Set a small width */
    height: 50vh;
  }
+
+ @media only screen and (max-width: 600px) {
+   img#img1 {
+     border: 1px solid #ddd; /* Gray border */
+     border-radius: 4px;  /* Rounded border */
+     padding: 5px; /* Some padding */
+     width: 100%; /* Set a small width */
+     height: 50vh;
+   }
+    img#img2 {
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px;  /* Rounded border */
+      padding: 5px; /* Some padding */
+      width: 100%; /* Set a small width */
+      height: 50vh;
+    }
+ }
 /* Add a hover effect (blue shadow) */
 img:hover {
   box-shadow: 0 0 2px 1px #026670;
@@ -30,6 +47,10 @@ p{
 .col-sm#col2 {
   display:flex;
   flex-direction:column;
-justify-content: flex-start;
+justify-content: center;
+/*width: 60%;*/
 
 }
+/*.col-sm#col1 {
+  width: 40%;
+}*/

@@ -8,6 +8,93 @@ background-color: #9fc4be;
 div.topspace {
   margin-top: 0px;
  background: #dadddc;
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ font-size: 20px;
+ font-family: Courier New, sans-serif;
+ justify-content: center;
+}
+.logo {
+  display:flex;
+  flex-direction: row;
+  width: 14%;
+  justify-content: center;
+}
+.home {
+  display:flex;
+  flex-direction: row;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  display:flex;
+  flex-direction: row;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+}
+.blog {
+  display:flex;
+  flex-direction: row;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  display:flex;
+  flex-direction: row;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+}
+a {
+    color: #026670;
+}
+a#nav:hover {
+  color: #013c42;
+  font-size: 1.3em;
+  transition: 0.5s ease;
+}
+a#shops:hover {
+  color: #013c42;
+  font-size: 1.1em;
+  transition: 0.5s ease;
+}
+a#shops {
+  margin-left: 1%;
+  font-style: italic;
+}
+.social {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 14%;
+}
+.fa {
+  padding: 10px;
+  width: 37px;
+  /*text-align: center;*/
+  text-decoration: none;
+  border-radius: 70%;
+  margin-right: 2%;
+}
+.fa:hover {
+  opacity: 0.4;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  opacity: 0.8;
+  font-size: 25px;
+}
+.fa-facebook {
+  background: #3B5998;
+  opacity: 0.8;
+  color: white;
+  font-size: 28px;
 }
 .carousel-inner {
 height: 500px;
@@ -19,37 +106,13 @@ margin: auto;
     height: 100%;
 }
 
-ul#top {
-    list-style: none;
-    font-size: 20px;
-    font-family: Courier New, sans-serif;
-    margin-left: auto;
-    padding: 0px 0px 0px 0px;
-}
 div.container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-a {
-    color: #026670;
-}
-a:hover {
-  color: #013c42;
-}
-li {
-  display: inline;
-    padding: 0px 90px 0px 90px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-li:hover {
-  font-size: 1.1em;
-  transition: 0.5s ease;
-  color: #026670;
 
-}
 img#logo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -60,7 +123,7 @@ h1, h2, h4 {
 
 }
 h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-style: italic;
 }
 h2 {
@@ -69,7 +132,8 @@ h2 {
 }
 h3 {
   color: #025760;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  margin-left: 1%;
 }
 h4 {
   font-size: 1.3em;
@@ -77,17 +141,32 @@ h4 {
 }
 
 p {
-  width: 40%;
+  /*width: 40%;
   margin: 10vh 10vw;
-  font-size: 2em;
+  font-size: 2em;*/
+  font-size: 1em;
   color: #025760;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 h5 {
   color: rgb(255,255,255);
   font-size: 2em;
   font-style: oblique;
 }
+h5#ad {
+  font-size: 0.9em;
+  font-style: normal;
+  margin-left: 1%;
+}
 
+h6{
+  color: #025760;
+  font-style: italic;
+  font-size: 1.6em;
+  font-family: cursive;
+  text-align: center;
+}
 form {
     color: #025760;
 }
@@ -102,6 +181,59 @@ div.carousel-caption#cc1 {
   left: -20%;
 }
 
+@media only screen and (max-width: 500px){
+  .carousel-inner {
+  height: 320px;
+  width: 80vw;
+  margin-top: 10%;
+  }
+  div.carousel-caption {
+      position: static;
+      font-size: small;}
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
 a#cc {
   color: rgb(255,255,255);
 }
+
+a#shops:hover {
+  color: #013c42;
+  transition: 0.4s ease;
+}
+
+hr {
+    border-top: 1px dashed #dd6644;
+    height: 20px;
+    width: 60vw;
+    color: #dd6644;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p#hello {
+  font-size: 1.3em;
+  font-style: oblique;
+}
+
+ol {
+  font-size: 1.1em;
+  color: #013c42;
+  margin-left: 2%;
+  list-style-type: lower-roman;
+}
+ul {
+  font-size: 0.8em;
+  color: #025760;
+  margin-right: 3%;
+
+}
+
+/*ul li::before {
+  content: "\2022";
+  color: #dd6644;
+display: inline-block;}
